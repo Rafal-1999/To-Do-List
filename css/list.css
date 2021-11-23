@@ -1,6 +1,11 @@
 .list {
     width: 70%;
     margin: 50px auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+.list__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 .list__block {
     background: rgb(255, 255, 255);
