@@ -4,4 +4,6 @@
 }
 .list__block {
     background: rgb(255, 255, 255);
+    border: solid 3px rgb(227, 227, 227);
+    border-radius: 5px;
 }
