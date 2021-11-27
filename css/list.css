@@ -7,3 +7,9 @@
     border: solid 3px rgb(227, 227, 227);
     border-radius: 5px;
 }
+.list__box {
+    border-bottom: solid 3px rgb(227, 227, 227);
+}
+.list__box--no-line {
+    border: none;
+}
