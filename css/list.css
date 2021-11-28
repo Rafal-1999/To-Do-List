@@ -13,3 +13,9 @@
 .list__box--no-line {
     border: none;
 }
+.list__button {
+    background: rgb(0, 116, 131);
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(30, 111, 125);
+    padding: 10px;
+}
