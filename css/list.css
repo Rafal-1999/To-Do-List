@@ -16,6 +16,7 @@
 }
 .list__header {
     font-size: 25px;
+    margin: 0;
 }
 .list__box--no-line {
     border: none;
