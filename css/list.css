@@ -9,6 +9,7 @@
     background: rgb(255, 255, 255);
     border: solid 2px rgb(227, 227, 227);
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 .list__box {
     border-bottom: solid 2px rgb(227, 227, 227);
