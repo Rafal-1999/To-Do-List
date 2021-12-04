@@ -21,6 +21,14 @@
 .list__box--no-line {
     border: none;
 }
+.list__form {
+    display: flex;
+}
+.list__input {
+    padding: 10px;
+    margin-right: 25px;
+    flex: 1;
+}
 .list__button {
     background: rgb(0, 116, 131);
     color: rgb(255, 255, 255);
