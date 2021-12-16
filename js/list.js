@@ -16,8 +16,13 @@
         const taskBlock = document.querySelector(".js-taskBlock");
         form.addEventListener("submit", e => {
             e.preventDefault();
+            onFormSubmit(newTask);
         });
-    }
+    };
+
+    const onFormSubmit = (newTask) => {
+        const taskContent = newTask.value.trim();
+    };
 
     init();
 }
