@@ -25,6 +25,11 @@
         if (taskContent === "") {
             return;
         }
+
+        addNewTask(taskContent);
+    };
+
+    const addNewTask = (taskContent) => {
     };
 
     init();
