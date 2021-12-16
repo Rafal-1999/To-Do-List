@@ -22,6 +22,9 @@
 
     const onFormSubmit = (newTask) => {
         const taskContent = newTask.value.trim();
+        if (taskContent === "") {
+            return;
+        }
     };
 
     init();
