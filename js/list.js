@@ -30,6 +30,11 @@
     };
 
     const addNewTask = (taskContent) => {
+        tasks.push(
+            {
+                content: taskContent,
+            }
+        );
     };
 
     init();
