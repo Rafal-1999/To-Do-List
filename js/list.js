@@ -35,6 +35,10 @@
                 content: taskContent,
             }
         );
+        render();
+    };
+
+    const render = () => {
     };
 
     init();
