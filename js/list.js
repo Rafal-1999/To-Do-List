@@ -39,6 +39,18 @@
     };
 
     const render = () => {
+        let htmlString = "";
+
+        for (const task of tasks) {
+            htmlString += `
+            <ul>
+            <li>
+            ${task.content}
+            </li>
+            </ul>
+            `;
+        }
+        innerHTML = htmlString;
     };
 
     init();
