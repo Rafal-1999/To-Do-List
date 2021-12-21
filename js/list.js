@@ -22,6 +22,7 @@
 
     const onFormSubmit = (newTask) => {
         const taskContent = newTask.value.trim();
+        // Add a condition when the task already exists
         if (taskContent === "") {
             newTask.focus();
             return;
