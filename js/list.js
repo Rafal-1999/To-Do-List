@@ -23,6 +23,7 @@
     const onFormSubmit = (newTask) => {
         const taskContent = newTask.value.trim();
         if (taskContent === "") {
+            newTask.focus();
             return;
         }
 
