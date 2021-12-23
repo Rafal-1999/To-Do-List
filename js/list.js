@@ -54,6 +54,8 @@
             `;
         }
         innerHTML = htmlString;
+
+        const removeButtons = document.querySelectorAll(".js-removeButton");
     };
 
     init();
