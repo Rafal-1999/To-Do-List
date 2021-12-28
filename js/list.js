@@ -26,6 +26,8 @@
         if (taskContent === "") {
             newTask.focus();
             return;
+        } else {
+            newTask.value = "";
         }
 
         addNewTask(taskContent);
@@ -37,6 +39,7 @@
                 content: taskContent,
             }
         );
+
         render();
     };
 
