@@ -59,6 +59,8 @@
         const removeButtons = document.querySelectorAll(".js-removeButton");
 
         // Created function responsible for removing a specific task from array.
+        removeButtons.forEach((removeButton, taskIndex) => {
+        });
     };
 
     init();
