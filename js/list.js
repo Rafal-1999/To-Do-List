@@ -57,6 +57,7 @@
             ${task.content}
             </li>
             <button class="js-removeButton">Usuń</button>
+            <button class="js-doneButton">Wykonane</button>
             `;
         }
         document.querySelector(".js-taskBlock").innerHTML = htmlString;
