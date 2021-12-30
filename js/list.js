@@ -43,6 +43,11 @@
         render();
     };
 
+    const removeTask = (taskIndex) => {
+        tasks.splice(taskIndex, 1);
+        render();
+    };
+
     const render = () => {
         let htmlString = "";
 
@@ -58,9 +63,9 @@
 
         const removeButtons = document.querySelectorAll(".js-removeButton");
 
-        // Created function responsible for removing a specific task from array.
         removeButtons.forEach((removeButton, taskIndex) => {
             removeButton.addEventListener("click", () => {
+                removeTask(taskIndex);
             });
         });
     };
