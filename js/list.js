@@ -69,6 +69,8 @@
                 removeTask(taskIndex);
             });
         });
+
+        const doneButtons = document.querySelectorAll(".js-doneButton");
     };
 
     init();
