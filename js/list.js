@@ -73,6 +73,8 @@
         const doneButtons = document.querySelectorAll(".js-doneButton");
 
         doneButtons.forEach((doneButton, taskIndex) => {
+            doneButton.addEventListener("click", () => {
+            });
         });
     };
 
