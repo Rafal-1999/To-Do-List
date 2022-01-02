@@ -13,10 +13,12 @@
     const init = () => {
         const form = document.querySelector(".js-form");
         const newTask = document.querySelector(".js-newTask");
+
         form.addEventListener("submit", e => {
             e.preventDefault();
             onFormSubmit(newTask);
         });
+
         render();
     };
 
@@ -48,6 +50,11 @@
         render();
     };
 
+    const toggleDoneTask = (taskIndex) => {
+        tasks[taskIndex].done = !tasks[taskIndex].done;
+        render();
+    };
+
     const render = () => {
         let htmlString = "";
 
@@ -74,6 +81,7 @@
 
         doneButtons.forEach((doneButton, taskIndex) => {
             doneButton.addEventListener("click", () => {
+                toggleDoneTask(taskIndex);
             });
         });
     };
