@@ -7,12 +7,12 @@
 }
 .list__block {
     background: rgb(255, 255, 255);
-    border: solid 2px rgb(227, 227, 227);
+    border: 2px solid rgb(227, 227, 227);
     border-radius: 5px;
     margin-bottom: 10px;
 }
 .list__box {
-    border-bottom: solid 2px rgb(227, 227, 227);
+    border-bottom: 2px solid rgb(227, 227, 227);
     padding: 25px;
 }
 .list__header {
@@ -35,4 +35,7 @@
     color: rgb(255, 255, 255);
     border: 3px solid rgb(30, 111, 125);
     padding: 10px;
+}
+.list__tasks-block {
+    padding: 25px;
 }
