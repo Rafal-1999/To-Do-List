@@ -44,3 +44,12 @@
     padding: 0;
     margin: 0;
 }
+.list__action-button {
+    border: none;
+}
+.list__action-button--done {
+    background-color: rgb(24, 122, 30);
+}
+.list__action-button--remove {
+    background-color: rgb(234, 42, 60);
+}
