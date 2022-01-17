@@ -44,16 +44,31 @@
     padding: 0;
     margin: 0;
 }
+.list__tasks-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 2px solid rgb(227, 227, 227);
+}
+.list__tasks-item:last-child {
+    border: none;
+}
 .list__action-button {
     width: 40px;
     height: 40px;
     border: none;
+    flex-shrink: 0;
 }
 .list__action-button--done {
     background-color: rgb(24, 122, 30);
 }
 .list__action-button--remove {
     background-color: rgb(234, 42, 60);
+}
+.list__tasks-content {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0 15px;
 }
 .list__icon {
     font-size: 20px;
