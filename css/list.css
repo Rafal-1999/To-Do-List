@@ -45,6 +45,8 @@
     margin: 0;
 }
 .list__action-button {
+    width: 40px;
+    height: 40px;
     border: none;
 }
 .list__action-button--done {
@@ -52,4 +54,11 @@
 }
 .list__action-button--remove {
     background-color: rgb(234, 42, 60);
+}
+.list__icon {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.list__icon::before {
+    margin: 0;
 }
