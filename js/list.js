@@ -62,13 +62,13 @@
             htmlString += `
             <li class="list__tasks-item">
             <button class="list__action-button list__action-button--done js-doneButton">
-            Wykonane
+            ${task.done ? "<i class=\"icon-check list__icon\"></i>" : ""}
             </button>
             <p class="list__tasks-content" ${task.done ? "style=\"text-decoration: line-through;\"" : ""}>
             ${task.content}
             </p>
             <button class="list__action-button list__action-button--remove js-removeButton">
-            Usuń
+            <i class="icon-trash-empty list__icon"></i>
             </button>
             </li>
             `;
