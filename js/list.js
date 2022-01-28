@@ -75,6 +75,10 @@
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
+        bindEvents();
+    };
+
+    const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-removeButton");
 
         removeButtons.forEach((removeButton, taskIndex) => {
