@@ -73,6 +73,9 @@
     margin: 0;
     padding: 0 15px;
 }
+.list__tasks-content--done {
+    text-decoration: line-through;
+}
 .list__icon {
     font-size: 20px;
     color: rgb(255, 255, 255);

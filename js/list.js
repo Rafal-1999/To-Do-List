@@ -64,7 +64,7 @@
             <button class="list__action-button list__action-button--done js-doneButton">
             ${task.done ? "<i class=\"icon-check list__icon\"></i>" : ""}
             </button>
-            <p class="list__tasks-content" ${task.done ? "style=\"text-decoration: line-through;\"" : ""}>
+            <p class="list__tasks-content${task.done ? " list__tasks-content--done" : ""}">
             ${task.content}
             </p>
             <button class="list__action-button list__action-button--remove js-removeButton">
