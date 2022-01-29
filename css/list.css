@@ -39,6 +39,13 @@
     padding: 10px;
     flex-shrink: 0;
 }
+.list__button:hover {
+    background: rgb(0, 141, 156);
+    border-color: rgb(30, 136, 150);
+}
+.list__button:active {
+    background: rgb(0, 167, 182);
+}
 .list__tasks-block {
     padding: 25px;
 }
@@ -65,8 +72,20 @@
 .list__action-button--done {
     background-color: rgb(24, 122, 30);
 }
+.list__action-button--done:hover {
+    background-color: rgb(29, 142, 35);
+}
+.list__action-button--done:active {
+    background-color: rgb(34, 162, 40);
+}
 .list__action-button--remove {
     background-color: rgb(234, 42, 60);
+}
+.list__action-button--remove:hover {
+    background-color: rgb(249, 53, 72);
+}
+.list__action-button--remove:active {
+    background-color: rgb(251, 76, 91);
 }
 .list__tasks-content {
     flex-grow: 1;
