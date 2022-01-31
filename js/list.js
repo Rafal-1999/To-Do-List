@@ -30,6 +30,7 @@
             return;
         } else {
             newTask.value = "";
+            newTask.focus();
         }
 
         addNewTask(taskContent);
