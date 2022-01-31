@@ -1,6 +1,5 @@
 .list {
-    width: 70%;
-    margin: 50px auto;
+    margin-top: 50px;
 }
 .list__title {
     font-size: 40px;
@@ -29,15 +28,12 @@
     padding: 10px;
     margin-right: 25px;
     flex: 1;
-    flex-grow: 1;
-    flex-shrink: 1;
 }
 .list__button {
     background: rgb(0, 116, 131);
     color: rgb(255, 255, 255);
     border: 3px solid rgb(30, 111, 125);
     padding: 10px;
-    flex-shrink: 0;
 }
 .list__button:hover {
     background: rgb(0, 141, 156);
@@ -104,20 +100,10 @@
 }
 
 @media (max-width: 576px) {
-    .list {
-        width: 90%;
-    }
     .list__form {
-        max-width: 100%;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .list__input {
         margin: 0 0 15px;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
-    .list__button {
-        flex-grow: 1;
-        flex-shrink: 0;
     }
 }
