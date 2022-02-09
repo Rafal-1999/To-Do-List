@@ -103,6 +103,12 @@
 }
 
 @media (max-width: 576px) {
+    .list__title {
+        font-size: 30px;
+    }
+    .list__header {
+        font-size: 20px;
+    }
     .list__form {
         flex-direction: column;
     }
