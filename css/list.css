@@ -14,12 +14,17 @@
     border-bottom: 2px solid rgb(227, 227, 227);
     padding: 25px;
 }
+.list__box--no-line {
+    border: none;
+}
+.list__box--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .list__header {
     font-size: 25px;
     margin: 0;
-}
-.list__box--no-line {
-    border: none;
 }
 .list__form {
     display: flex;
@@ -41,6 +46,13 @@
 }
 .list__button:active {
     background: rgb(0, 167, 182);
+}
+.list__options {
+    display: flex;
+}
+.list__option-button {
+    border: none;
+    background: none;
 }
 .list__tasks-block {
     padding: 25px;
