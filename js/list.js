@@ -13,6 +13,8 @@
     const init = () => {
         const form = document.querySelector(".js-form");
         const newTask = document.querySelector(".js-newTask");
+        const firstOption = document.querySelector(".js-firstOption");
+        const secondOption = document.querySelector(".js-secondOption");
 
         form.addEventListener("submit", e => {
             e.preventDefault();
