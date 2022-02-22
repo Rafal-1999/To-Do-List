@@ -21,6 +21,8 @@
             onFormSubmit(newTask);
         });
 
+        hideAndShowDoneTasks(firstOption);
+
         render();
     };
 
@@ -96,6 +98,12 @@
             doneButton.addEventListener("click", () => {
                 toggleDoneTask(taskIndex);
             });
+        });
+    };
+
+    const hideAndShowDoneTasks = (firstOption) => {
+        firstOption.addEventListener("click", () => {
+            firstOption.innerText = firstOption.innerText === "Ukryj ukończone" ? "Pokaż ukończone" : "Ukryj ukończone";
         });
     };
 
