@@ -22,6 +22,7 @@
         });
 
         hideAndShowDoneTasks(firstOption);
+        completeAllTasks(secondOption);
 
         render();
     };
@@ -104,6 +105,11 @@
     const hideAndShowDoneTasks = (firstOption) => {
         firstOption.addEventListener("click", () => {
             firstOption.innerText = firstOption.innerText === "Ukryj ukończone" ? "Pokaż ukończone" : "Ukryj ukończone";
+        });
+    };
+
+    const completeAllTasks = (secondOption) => {
+        secondOption.addEventListener("click", () => {
         });
     };
 
