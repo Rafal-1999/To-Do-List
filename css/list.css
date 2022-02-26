@@ -39,10 +39,12 @@
     color: rgb(255, 255, 255);
     border: 3px solid rgb(30, 111, 125);
     padding: 10px;
+    transition: transform 0.5s linear;
 }
 .list__button:hover {
     background: rgb(0, 141, 156);
     border-color: rgb(30, 136, 150);
+    transform: scale(1.1);
 }
 .list__button:active {
     background: rgb(0, 167, 182);
@@ -76,24 +78,25 @@
     height: 40px;
     border: none;
     flex-shrink: 0;
+    transition: background 0.5s linear;
 }
 .list__action-button--done {
     background-color: rgb(24, 122, 30);
 }
 .list__action-button--done:hover {
-    background-color: rgb(29, 142, 35);
+    background-color: rgb(30, 137, 35);
 }
 .list__action-button--done:active {
-    background-color: rgb(34, 162, 40);
+    background-color: rgb(35, 165, 40);
 }
 .list__action-button--remove {
     background-color: rgb(234, 42, 60);
 }
 .list__action-button--remove:hover {
-    background-color: rgb(249, 53, 72);
+    background-color: rgb(250, 60, 72);
 }
 .list__action-button--remove:active {
-    background-color: rgb(251, 76, 91);
+    background-color: rgb(255, 85, 91);
 }
 .list__tasks-content {
     flex-grow: 1;
