@@ -61,6 +61,9 @@
         render();
     };
 
+    const renderButtons = () => {
+    };
+
     const renderTasks = () => {
         let htmlString = "";
 
@@ -83,6 +86,7 @@
     };
 
     const render = () => {
+        renderButtons();
         renderTasks();
 
         bindEvents();
