@@ -89,10 +89,10 @@
         renderButtons();
         renderTasks();
 
-        bindEvents();
+        bindTasksOptionsEvents();
     };
 
-    const bindEvents = () => {
+    const bindTasksOptionsEvents = () => {
         const removeButtons = document.querySelectorAll(".js-removeButton");
 
         removeButtons.forEach((removeButton, taskIndex) => {
