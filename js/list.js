@@ -89,8 +89,11 @@
         renderButtons();
         renderTasks();
 
+        bindButtonsOptionsEvents();
         bindTasksOptionsEvents();
     };
+
+    const bindButtonsOptionsEvents = () => {};
 
     const bindTasksOptionsEvents = () => {
         const removeButtons = document.querySelectorAll(".js-removeButton");
