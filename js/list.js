@@ -13,16 +13,11 @@
     const init = () => {
         const form = document.querySelector(".js-form");
         const newTask = document.querySelector(".js-newTask");
-        const firstOption = document.querySelector(".js-firstOption");
-        const secondOption = document.querySelector(".js-secondOption");
 
         form.addEventListener("submit", e => {
             e.preventDefault();
             onFormSubmit(newTask);
         });
-
-        hideAndShowDoneTasks(firstOption);
-        completeAllTasks(secondOption);
 
         render();
     };
@@ -102,7 +97,10 @@
         bindTasksOptionsEvents();
     };
 
-    const bindButtonsOptionsEvents = () => {};
+    const bindButtonsOptionsEvents = () => {
+        const firstOption = document.querySelector(".js-firstOption");
+        const secondOption = document.querySelector(".js-secondOption");
+    };
 
     const bindTasksOptionsEvents = () => {
         const removeButtons = document.querySelectorAll(".js-removeButton");
