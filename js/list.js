@@ -62,6 +62,15 @@
     };
 
     const renderButtons = () => {
+        const htmlString = `
+        <button class="list__option-button js-firstOption">
+            Ukryj ukończone
+        </button>
+        <button class="list__option-button js-secondOption">
+            Ukończ wszystkie
+        </button>
+        `;
+        document.querySelector(".js-optionsButtons").innerHTML = htmlString;
     };
 
     const renderTasks = () => {
