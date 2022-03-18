@@ -1,5 +1,5 @@
 {
-    const tasks = [
+    let tasks = [
         {
             content: "Poczytać książkę.",
             done: true,
@@ -37,11 +37,13 @@
     };
 
     const addNewTask = (taskContent) => {
-        tasks.push(
+        tasks = [
+            ...tasks,
             {
                 content: taskContent,
+                done: false,
             }
-        );
+        ];
 
         render();
     };
