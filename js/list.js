@@ -106,6 +106,10 @@
     const bindButtonsOptionsEvents = () => {
         const firstOption = document.querySelector(".js-firstOption");
         const secondOption = document.querySelector(".js-secondOption");
+
+        secondOption.addEventListener("click", () => {
+            completeAllTasks();
+        });
     };
 
     const bindTasksOptionsEvents = () => {
@@ -132,9 +136,13 @@
         });
     };
 
-    const completeAllTasks = (secondOption) => {
-        secondOption.addEventListener("click", () => {
-        });
+    const completeAllTasks = () => {
+        tasks = tasks.map((tasksList) => ({
+            ...tasksList,
+            done: true
+        }));
+
+        render();
     };
 
     init();
