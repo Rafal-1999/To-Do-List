@@ -63,15 +63,20 @@
     };
 
     const renderButtons = () => {
-        const htmlString = `
-        <button class="list__option-button js-firstOption">
-            Ukryj ukończone
-        </button>
-        <button class="list__option-button js-secondOption" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
-            Ukończ wszystkie
-        </button>
-        `;
-        document.querySelector(".js-optionsButtons").innerHTML = htmlString;
+        const optionsButtons = document.querySelector(".js-optionsButtons");
+
+        if (tasks.length === 0) {
+            optionsButtons.innerHTML = "";
+        } else {
+            optionsButtons.innerHTML = `
+            <button class="list__option-button js-firstOption">
+                Ukryj ukończone
+            </button>
+            <button class="list__option-button js-secondOption" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+                Ukończ wszystkie
+            </button>
+            `;
+        }
     };
 
     const renderTasks = () => {
