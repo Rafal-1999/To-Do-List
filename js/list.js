@@ -67,7 +67,7 @@
         <button class="list__option-button js-firstOption">
             Ukryj ukończone
         </button>
-        <button class="list__option-button js-secondOption">
+        <button class="list__option-button js-secondOption" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
             Ukończ wszystkie
         </button>
         `;
