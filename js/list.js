@@ -9,6 +9,7 @@
             done: false,
         }
     ];
+    let hideDoneTasks = false;
 
     const init = () => {
         const form = document.querySelector(".js-form");
@@ -70,7 +71,7 @@
         } else {
             optionsButtons.innerHTML = `
             <button class="list__option-button js-firstOption">
-                Ukryj ukończone
+                ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
             </button>
             <button class="list__option-button js-secondOption" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
                 Ukończ wszystkie
