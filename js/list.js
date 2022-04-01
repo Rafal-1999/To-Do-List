@@ -110,6 +110,10 @@
     };
 
     const bindButtonsOptionsEvents = () => {
+        if (tasks.length === 0) {
+            return;
+        }
+
         const firstOption = document.querySelector(".js-firstOption");
         const secondOption = document.querySelector(".js-secondOption");
 
