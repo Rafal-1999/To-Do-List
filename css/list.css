@@ -73,6 +73,9 @@
 .list__tasks-item:last-child {
     border: none;
 }
+.list__tasks-item--done {
+    display: none;
+}
 .list__action-button {
     width: 40px;
     height: 40px;

@@ -93,7 +93,7 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li class="list__tasks-item">
+            <li class="list__tasks-item${task.done && hideDoneTasks ? " list__tasks-item--done" : ""}">
                 <button class="list__action-button list__action-button--done js-doneButton">
                     ${task.done ? "<i class=\"icon-check list__icon\"></i>" : ""}
                 </button>
@@ -123,6 +123,11 @@
         }
 
         const firstOption = document.querySelector(".js-firstOption");
+
+        firstOption.addEventListener("click", () => {
+            hideAndShowDoneTasks();
+        });
+
         const secondOption = document.querySelector(".js-secondOption");
 
         secondOption.addEventListener("click", () => {
@@ -148,10 +153,10 @@
         });
     };
 
-    const hideAndShowDoneTasks = (firstOption) => {
-        firstOption.addEventListener("click", () => {
-            firstOption.innerText = firstOption.innerText === "Ukryj ukończone" ? "Pokaż ukończone" : "Ukryj ukończone";
-        });
+    const hideAndShowDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
+        console.log("Klikam tutaj.");
+        render();
     };
 
     const completeAllTasks = () => {
