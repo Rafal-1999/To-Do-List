@@ -55,6 +55,15 @@
 .list__option-button {
     border: none;
     background: none;
+    color: rgb(0, 116, 131);
+    font-size: 18px;
+}
+.list__option-button:hover,
+.list__option-button:focus {
+    color: rgb(0, 160, 200);
+}
+.list__option-button:disabled {
+    color: rgb(200, 200, 200);
 }
 .list__tasks-block {
     padding: 25px;
