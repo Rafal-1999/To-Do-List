@@ -118,11 +118,11 @@
     };
 
     const bindButtonsOptionsEvents = () => {
-        if (tasks.length === 0) {
+        const firstOption = document.querySelector(".js-firstOption");
+
+        if (!firstOption) {
             return;
         }
-
-        const firstOption = document.querySelector(".js-firstOption");
 
         firstOption.addEventListener("click", () => {
             hideAndShowDoneTasks();
@@ -155,7 +155,6 @@
 
     const hideAndShowDoneTasks = () => {
         hideDoneTasks = !hideDoneTasks;
-        console.log("Klikam tutaj.");
         render();
     };
 
