@@ -71,6 +71,8 @@
         render();
     };
 
+    const crossOutSmoothlyDoneTask = () => {};
+
     const renderButtons = () => {
         const optionsButtons = document.querySelector(".js-optionsButtons");
 
