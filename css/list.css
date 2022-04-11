@@ -163,10 +163,11 @@
     .list__options {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
+        margin: 20px 0;
     }
     .list__option-button {
-        margin: 20px 0;
-        padding: 0;
+        margin: 0;
     }
 }
 
