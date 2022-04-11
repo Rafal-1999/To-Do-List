@@ -123,9 +123,30 @@
     background-size: 0% 1px;
     background-position: left center;
     background-repeat: no-repeat;
+    animation-name: smooth-cross-out-undone;
+    animation-duration: 5s;
+    animation-timing-function: linear;
 }
 .list__tasks-content--done {
     background-size: 100% 1px;
+    animation-name: smooth-cross-out-done;
+    animation-timing-function: linear;
+}
+@keyframes smooth-cross-out-done {
+    0% {
+        background-size: 0% 1px;
+    }
+    100% {
+        background-size: 100% 1px;
+    }
+}
+@keyframes smooth-cross-out-undone {
+    0% {
+        background-size: 100% 1px;
+    }
+    100% {
+        background-size: 0% 1px;
+    }
 }
 .list__icon {
     font-size: 20px;
