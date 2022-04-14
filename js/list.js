@@ -71,6 +71,7 @@
         render();
     };
 
+    // To do in the future
     const crossOutSmoothlyDoneTask = () => {};
 
     const renderButtons = () => {
