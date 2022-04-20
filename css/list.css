@@ -58,6 +58,7 @@
     font-size: 18px;
     padding: 0;
     margin: 0 10px;
+    transition: color 0.3s linear;
 }
 .list__option-button:hover,
 .list__option-button:focus {
