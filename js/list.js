@@ -25,13 +25,22 @@
 
     const onFormSubmit = (newTask) => {
         const taskContent = newTask.value.trim();
-        // Add a condition when the task already exists
+
         if (taskContent === "") {
             newTask.focus();
             return;
         } else {
             newTask.value = "";
             newTask.focus();
+        }
+
+        existTask(taskContent);
+    };
+
+    const existTask = (taskContent) => {
+        if (tasks.some(({content}) => content === taskContent)) {
+            alert("Podane zadanie jest już na liście.");
+            return;
         }
 
         addNewTask(taskContent);
