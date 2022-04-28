@@ -38,7 +38,7 @@
     };
 
     const existTask = (taskContent) => {
-        if (tasks.some(({content}) => content === taskContent)) {
+        if (tasks.some(({ content }) => content === taskContent)) {
             alert("Podane zadanie jest już na liście.");
             return;
         }
