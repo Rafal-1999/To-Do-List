@@ -90,10 +90,10 @@
             optionsButtons.innerHTML = "";
         } else {
             optionsButtons.innerHTML = `
-            <button class="list__option-button js-firstOption">
+            <button type="button" class="list__option-button js-firstOption">
                 ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
             </button>
-            <button class="list__option-button js-secondOption" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
+            <button type="button" class="list__option-button js-secondOption" ${tasks.every(({ done }) => done) ? "disabled" : ""}>
                 Ukończ wszystkie
             </button>
             `;
@@ -106,7 +106,7 @@
         for (const task of tasks) {
             htmlString += `
             <li class="list__tasks-item${task.done && hideDoneTasks ? " list__tasks-item--done" : ""}">
-                <button class="list__action-button list__action-button--done js-doneButton">
+                <button type="button" class="list__action-button list__action-button--done js-doneButton">
                     ${task.done ? "<i class=\"icon-check list__icon\"></i>" : ""}
                 </button>
                 <p class="list__paragraph">
@@ -114,7 +114,7 @@
                         ${task.content}
                     </span>
                 </p>
-                <button class="list__action-button list__action-button--remove js-removeButton">
+                <button type="button" class="list__action-button list__action-button--remove js-removeButton">
                     <i class="icon-trash-empty list__icon"></i>
                 </button>
             </li>
